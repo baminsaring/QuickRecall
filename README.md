@@ -1,50 +1,86 @@
-# Welcome to your Expo app 👋
+# QuickRecall
 
-This is an [Expo](https://expo.dev) project created with [`create-expo-app`](https://www.npmjs.com/package/create-expo-app).
+A mobile application built with Expo for efficient recall and learning.
 
-## Get started
+## Overview
 
-1. Install dependencies
+QuickRecall is a mobile application designed to help users improve their learning and memory retention through interactive recall exercises. Built with [Expo](https://expo.dev), this cross-platform application runs seamlessly on iOS, Android, and the web.
 
+## Getting Started
+
+### Prerequisites
+
+- Node.js (v14 or higher)
+- npm or yarn
+
+### Installation
+
+1. Clone the repository
+   ```bash
+   git clone <repository-url>
+   cd QuickRecall
+   ```
+
+2. Install dependencies
    ```bash
    npm install
    ```
 
-2. Start the app
+### Running the Application
 
-   ```bash
-   npx expo start
-   ```
+Start the development server:
+```bash
+npx expo start
+```
 
-In the output, you'll find options to open the app in a
+You can then launch the app using one of the following options:
 
-- [development build](https://docs.expo.dev/develop/development-builds/introduction/)
-- [Android emulator](https://docs.expo.dev/workflow/android-studio-emulator/)
-- [iOS simulator](https://docs.expo.dev/workflow/ios-simulator/)
-- [Expo Go](https://expo.dev/go), a limited sandbox for trying out app development with Expo
+- **Development Build**: Use a custom development build for your platform
+- **Android Emulator**: Run on Android Studio emulator
+- **iOS Simulator**: Run on iPhone/iPad simulator (macOS only)
+- **Expo Go**: Quick testing using the Expo Go sandbox app
 
-You can start developing by editing the files inside the **app** directory. This project uses [file-based routing](https://docs.expo.dev/router/introduction).
+## Project Structure
 
-## Get a fresh project
+This project uses [file-based routing](https://docs.expo.dev/router/introduction). Application files are organized in the **app** directory.
 
-When you're ready, run:
+## Development
 
+### Reset to Blank Project
+
+To start fresh with a blank project:
 ```bash
 npm run reset-project
 ```
 
-This command will move the starter code to the **app-example** directory and create a blank **app** directory where you can start developing.
+This command will move starter code to **app-example** and create a clean **app** directory for development.
 
-## Learn more
+### Code Style and Best Practices
 
-To learn more about developing your project with Expo, look at the following resources:
+- Follow component-based architecture principles
+- Keep components modular and reusable
+- Write meaningful commit messages
+- Test features across all supported platforms
 
-- [Expo documentation](https://docs.expo.dev/): Learn fundamentals, or go into advanced topics with our [guides](https://docs.expo.dev/guides).
-- [Learn Expo tutorial](https://docs.expo.dev/tutorial/introduction/): Follow a step-by-step tutorial where you'll create a project that runs on Android, iOS, and the web.
+## Documentation and Resources
 
-## Join the community
+For more information about developing with Expo:
 
-Join our community of developers creating universal apps.
+- [Expo Documentation](https://docs.expo.dev/) - Complete guides and API references
+- [Expo Tutorial](https://docs.expo.dev/tutorial/introduction/) - Step-by-step walkthrough for building cross-platform apps
+- [Expo Router](https://docs.expo.dev/router/introduction/) - File-based routing documentation
 
-- [Expo on GitHub](https://github.com/expo/expo): View our open source platform and contribute.
-- [Discord community](https://chat.expo.dev): Chat with Expo users and ask questions.
+## Community
+
+Connect with the Expo community:
+
+- [Expo on GitHub](https://github.com/expo/expo) - Contribute to the open-source platform
+- [Expo Discord](https://chat.expo.dev) - Chat with developers and get support
+
+## License
+
+[Add your license information here]
+
+## Support
+
+For issues, questions, or contributions, please open an issue on the repository or contact the maintainers.
