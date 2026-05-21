@@ -1,20 +1,32 @@
 import { Stack, Tabs } from "expo-router";
 import Ionicons from "@expo/vector-icons/Ionicons";
 import { Colors } from "@/src/constants/Colors";
+import { View, TouchableOpacity } from "react-native";
 
 export default function HomeLayout() {
   return (
     <Tabs
       screenOptions={{
         tabBarActiveTintColor: Colors.primary,
+        headerRight: () => (
+          <View style={{ flexDirection: 'row', gap: 15, paddingRight: 15 }}>
+            <TouchableOpacity>
+              <Ionicons name="person-circle-outline" size={28} color={Colors.primary} />
+            </TouchableOpacity>
+            <TouchableOpacity>
+              <Ionicons name="settings-outline" size={28} color={Colors.primary} />
+            </TouchableOpacity>
+          </View>
+        ),
       }}
     >
-        
+
       {/* Home */}
       <Tabs.Screen
         name="index"
         options={{
-          title: "Home",
+          title: "QuickRecall",
+          headerTintColor: Colors.primary,
           tabBarIcon: ({ color, focused }) => (
             <Ionicons
               name={focused ? "home-sharp" : "home-outline"}
@@ -32,7 +44,7 @@ export default function HomeLayout() {
           title: "Decks",
           tabBarIcon: ({ color, focused }) => (
             <Ionicons
-              name={focused ? "home-sharp" : "home-outline"}
+              name={focused ? "albums-sharp" : "albums-outline"}
               color={color}
               size={24}
             />
@@ -47,7 +59,7 @@ export default function HomeLayout() {
           title: "Study",
           tabBarIcon: ({ color, focused }) => (
             <Ionicons
-              name={focused ? "home-sharp" : "home-outline"}
+              name={focused ? "hardware-chip-sharp" : "hardware-chip-outline"}
               color={color}
               size={24}
             />
@@ -62,7 +74,7 @@ export default function HomeLayout() {
           title: "Stats",
           tabBarIcon: ({ color, focused }) => (
             <Ionicons
-              name={focused ? "home-sharp" : "home-outline"}
+              name={focused ? "stats-chart-sharp" : "stats-chart-outline"}
               color={color}
               size={24}
             />
